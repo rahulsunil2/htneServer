@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Login</title>
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <h1>Welcome {{ user.username }}</h1>
+    <a href={% url 'profile_edit' %}>Profile</a>
+    <a href="{% url 'team_register' %}">Team</a>
+    <a href={% url 'logout' %}>Sign out</a>
+</body>
+</html>
